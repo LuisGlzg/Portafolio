@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap'
+'https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario:#255F38;
+    --color-secundario:#F6F6F6;
+    --color-terciario:#22D4FD;
+    --color-hover: #2A004E;
+
+    --fuente-parr: 'Montserrat', sans-serif;
+    --fuente-titulo: 'Kroma One', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header-menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header-menu-link{
+    font-family: var(--fuente-parr);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    justify-content: space-between;
+}
+
+.presentacion-contenido{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion-contenido-titulo{
+    font-size: 2.25rem;
+    font-family: var(--fuente-titulo);
+}
+
+.titulo-destaque{
+    color: var(--color-hover);
+}
+
+.titulo-destaque:hover{
+    color: #4e0000;
+}
+
+.presentacion-contenido-parrafo{
+    font-size: 1.5rem;
+    font-family: var(--fuente-parr);
+}
+
+.presentacion_enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.subtitulo_enlaces{
+    font-family: var(--fuente-titulo);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentacion_enlaces_link{
+    width: 378px;
+    border: 2px dotted var(--color-terciario);
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--fuente-parr);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-secundario);
+
+    display: flex; /*este comando establece a los elemntos contenidos
+                     como hijos, lo que los alinea y trata por separado*/
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentacion_enlaces_link:hover{
+    background-color: var(--color-hover);
+}
+
+.presentacion-imagen{
+    width: 50%;
+}
+
+.footer{
+    background-color: var(--color-terciario);
+    padding: 1.5rem;
+    color: var(--color-hover);
+    text-align: center;
+    font-family: var(--fuente-parr);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px){
+    .header{
+        padding: 10%;
+    }
+    .header-menu{
+        justify-content: center;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .presentacion-contenido{
+        width: auto;
+    }
+}
